@@ -48,3 +48,7 @@ section {
   margin: 10px auto 0;
   border-radius: 2px;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
