@@ -407,3 +407,71 @@
   background: radial-gradient(ellipse, rgba(6, 182, 212, 0.4) 0%, transparent 70%);
   filter: blur(20px);
 }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 100px 6% 60px;
+    overflow: hidden;
+  }
+
+  .hero-wrapper {
+    flex-direction: column-reverse;   /* robot on top, text below */
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* Robot smaller on phone */
+  .character-image {
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto;
+  }
+
+  .character-container {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  /* Name fits the screen */
+  .hero-title {
+    font-size: 2rem;          /* smaller so it doesn't overflow */
+    word-wrap: break-word;
+  }
+
+  .hero-typewriter {
+    font-size: 1.2rem;
+  }
+
+  /* Info items centered */
+  .hero-info {
+    align-items: center;
+  }
+
+  .info-item {
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  /* Buttons stacked nicely */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  /* Socials centered */
+  .hero-socials {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
