@@ -1,0 +1,28 @@
+.custom-card {
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.custom-card.light {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(155, 89, 182, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.custom-card.dark {
+  background: rgba(15, 52, 96, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(187, 134, 252, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card.hoverable:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(155, 89, 182, 0.2);
+}
+
+.custom-card.dark.hoverable:hover {
+  box-shadow: 0 12px 30px rgba(187, 134, 252, 0.2);
+}

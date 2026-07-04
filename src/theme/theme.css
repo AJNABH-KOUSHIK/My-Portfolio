@@ -1,0 +1,29 @@
+/* Light Theme Variables */
+.light {
+  --bg-primary: #e8d5f5;
+  --bg-secondary: #f0e6f6;
+  --bg-card: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --accent: #9b59b6;
+  --accent-secondary: #e91e63;
+  --nav-bg: rgba(232, 213, 245, 0.95);
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --border: #e0d0e8;
+  --star-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dark Theme Variables */
+.dark {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-card: #0f3460;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --accent: #bb86fc;
+  --accent-secondary: #e91e63;
+  --nav-bg: rgba(26, 26, 46, 0.95);
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --border: #2a2a4a;
+  --star-color: rgba(255, 255, 255, 0.6);
+}

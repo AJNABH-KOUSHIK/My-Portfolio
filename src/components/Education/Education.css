@@ -1,0 +1,214 @@
+.education {
+  padding: 100px 10%;
+}
+
+.education.light {
+  background: #e8d5f5;
+}
+
+.education.dark {
+  background: #1a1a2e;
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0 20px 80px;
+}
+
+/* Vertical Line on the LEFT */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #9b59b6;
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot with Graduation Cap Icon */
+.timeline-dot {
+  position: absolute;
+  left: -65px;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e8d5f5;
+  border: 3px solid #9b59b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 1.3rem;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.education.dark .timeline-dot {
+  background: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.5);
+}
+
+/* Card Container */
+.timeline-card {
+  width: 100%;
+  padding: 30px !important;
+  background: #f0e0f8 !important;
+  border: 2px solid transparent !important;
+  transition: all 0.3s ease;
+}
+
+.education.dark .timeline-card {
+  background: rgba(155, 89, 182, 0.1) !important;
+}
+
+.timeline-item:hover .timeline-card {
+  border: 2px solid #9b59b6 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(155, 89, 182, 0.2) !important;
+}
+
+/* Duration Badge with Icon */
+.timeline-duration {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  background: #9b59b6;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.3);
+}
+
+.duration-icon {
+  font-size: 1rem;
+}
+
+/* Title */
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.light .timeline-title {
+  color: #1a1a2e;
+}
+
+.dark .timeline-title {
+  color: #e0e0e0;
+}
+
+/* Institution */
+.timeline-institution {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #9b59b6;
+}
+
+/* Grade with Icon */
+.timeline-grade-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.grade-icon {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.dark .grade-icon {
+  color: #e0e0e0;
+}
+
+.timeline-grade {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.light .timeline-grade {
+  color: #333;
+}
+
+.dark .timeline-grade {
+  color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 60px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-dot {
+    left: -55px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-institution {
+    font-size: 1rem;
+  }
+
+  .education {
+    padding: 80px 5%;
+  }
+
+  .timeline-card {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding-left: 45px;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-dot {
+    left: -48px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

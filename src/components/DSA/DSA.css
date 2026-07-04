@@ -1,0 +1,230 @@
+.dsa {
+  padding: 100px 10%;
+}
+
+.dsa.light {
+  background: #e8d5f5;
+}
+
+.dsa.dark {
+  background: #1a1a2e;
+}
+
+.dsa .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.dsa-wrapper {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* ---------- LEFT: platform cards ---------- */
+.dsa-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.platform-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 20px rgba(139, 92, 246, 0.15);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark .platform-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.platform-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.platform-info h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.light .platform-info h3 {
+  color: #333;
+}
+
+.dark .platform-info h3 {
+  color: #e0e0e0;
+}
+
+.platform-info p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.light .platform-info p {
+  color: #555;
+}
+
+.dark .platform-info p {
+  color: #aaa;
+}
+
+.platform-info p span {
+  color: #8b5cf6;
+  font-weight: 700;
+}
+
+/* ---------- RIGHT: badges card ---------- */
+.dsa-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.badges-card {
+  border: 2px solid #d8b4fe;
+  border-radius: 20px;
+  padding: 24px 28px;
+  background: #ffffff;
+  box-shadow: 0 5px 25px rgba(139, 92, 246, 0.2);
+  width: 100%;
+  max-width: 480px;
+}
+
+.badges-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badges-header h3 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 1.05rem;
+}
+
+.badges-divider {
+  border: none;
+  border-top: 1.5px solid #334155;
+  margin: 14px 0;
+}
+
+.badges-subtitle {
+  color: #1e293b;
+  margin: 14px 0 10px;
+  font-size: 1rem;
+}
+
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.badge-item {
+  text-align: center;
+  width: 90px;
+}
+
+.badge-item img {
+  width: 55px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.badge-name {
+  color: #2563eb;
+  font-size: 0.78rem;
+  margin: 6px 0 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge-date {
+  color: #475569;
+  font-size: 0.72rem;
+  margin: 0;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  .dsa {
+    padding: 80px 5%;
+  }
+
+  .dsa-wrapper {
+    flex-direction: column;
+  }
+}
+/* ---------- Badge grid ---------- */
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.badge-item {
+  text-align: center;
+  width: 90px;
+}
+
+/* ---------- 3D coin flip (like LeetCode) ---------- */
+.badge-flip {
+  perspective: 600px;           /* gives the 3D depth effect */
+  display: inline-block;
+}
+
+.badge-flip img {
+  width: 55px;
+  height: 60px;
+  object-fit: contain;
+  animation: coin-flip 4s ease-in-out infinite;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes coin-flip {
+  0%   { transform: rotateY(0deg); }
+  40%  { transform: rotateY(360deg); }   /* one full flip */
+  100% { transform: rotateY(360deg); }   /* then rest until loop repeats */
+}
+
+.badge-name {
+  color: #2563eb;
+  font-size: 0.78rem;
+  margin: 6px 0 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge-date {
+  color: #475569;
+  font-size: 0.72rem;
+  margin: 0;
+}
+/* Clockwise rotation */
+@keyframes orbit-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Keeps badges upright (spins opposite way) */
+@keyframes orbit-counter-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}

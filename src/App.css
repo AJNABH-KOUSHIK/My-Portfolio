@@ -1,0 +1,50 @@
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.app.light {
+  background-color: #e8d5f5;
+  color: #333;
+}
+
+.app.dark {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+section {
+  padding: 80px 10%;
+  position: relative;
+  scroll-margin-top: 90px;   /* 👈 THIS FIXES IT */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title span {
+  color: #9b59b6;
+}
+
+.app.light .section-title {
+  color: #333;
+}
+
+.app.dark .section-title {
+  color: #e0e0e0;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #9b59b6, #e91e63);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}

@@ -1,0 +1,361 @@
+.experience {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #a0aec0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Timeline Container */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+/* Experience Card */
+.experience-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  gap: 25px;
+  position: relative;
+  transition: all 0.3s ease;
+  animation: slideIn 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card.highlight {
+  border-color: rgba(236, 72, 153, 0.3);
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+}
+
+/* Icon */
+.experience-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.experience-card.highlight .experience-icon {
+  background: rgba(236, 72, 153, 0.1);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+/* Content */
+.experience-content {
+  flex: 1;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.experience-role {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.experience-company {
+  color: #cbd5e0;
+  font-size: 1rem;
+}
+
+.company-name {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.project-name {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+.experience-type {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* Meta Info */
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.meta-icon {
+  color: #667eea;
+  font-size: 0.8rem;
+}
+
+.duration {
+  color: #718096;
+}
+
+/* Description */
+.experience-description {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.experience-description li {
+  color: #cbd5e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience-description li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+}
+
+/* Skills */
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(102, 126, 234, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Highlight Badge */
+.highlight-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ec4899 0%, #7c3aed 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Light Theme Adjustments */
+.experience.light {
+  background: #f7fafc;
+}
+
+.experience.light .section-title {
+  color: #1a202c;
+}
+
+.experience.light .experience-card {
+  background: white;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.experience.light .experience-card:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.experience.light .experience-role {
+  color: #1a202c;
+}
+
+.experience.light .experience-description li {
+  color: #4a5568;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .experience-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .experience-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+  }
+  
+  .experience-meta {
+    align-items: flex-start;
+  }
+  
+  .highlight-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: inline-flex;
+    margin-top: 15px;
+    align-self: flex-start;
+  }
+}
+.experience-logo {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  padding: 8px;
+}
+
+.experience-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.9) contrast(1.1);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover .experience-logo img {
+  transform: scale(1.1);
+}
+
+/* For light theme */
+.experience.light .experience-logo {
+  background: white;
+  border-color: #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.experience.light .experience-logo img {
+  filter: none;
+}
+.experience-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  background-clip: padding-box;
+}
+
+/* Gradient border layer (hidden by default) */
+.experience-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;                       /* sits exactly where border is */
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6, #06b6d4);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* On hover — gradient border appears + lift + glow */
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 10px 30px rgba(139, 92, 246, 0.25),
+    0 0 20px rgba(236, 72, 153, 0.15);
+}
+
+.experience-card:hover::before {
+  opacity: 1;
+}
