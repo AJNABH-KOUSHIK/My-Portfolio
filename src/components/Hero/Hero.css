@@ -195,6 +195,7 @@
 /* Character Image with Animation */
 .character-image {
   width: 100%;
+  max-width: 500px;
   height: auto;
   max-height: 550px;
   object-fit: contain;
