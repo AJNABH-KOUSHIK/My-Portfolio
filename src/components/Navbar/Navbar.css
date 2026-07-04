@@ -191,12 +191,13 @@
     z-index: 1000;
   }
 
-  .nav-menu.light {
-    background: #e8d5f5;
+  /* ===== FIX: theme class is on .navbar, not .nav-menu ===== */
+  .navbar.light .nav-menu {
+    background: #e8d5f5;        /* solid — nothing visible behind */
   }
 
-  .nav-menu.dark {
-    background: #1a1a2e;
+  .navbar.dark .nav-menu {
+    background: #1a1a2e;        /* solid dark */
   }
 
   .nav-menu.active {
