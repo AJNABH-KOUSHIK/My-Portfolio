@@ -62,7 +62,8 @@
 
 /* Certificate Display Area */
 .certificate-display {
-   width: 550px;
+  width: 550px;
+  max-width: 100%;              /* ← FIX: never wider than screen */
   height: 480px;
   background: #fff;
   border-radius: 16px;
@@ -73,7 +74,8 @@
   animation: fadeIn 0.5s ease;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
+  flex-shrink: 1;               /* ← FIX: allowed to shrink */
+  box-sizing: border-box;       /* ← FIX: padding included in width */
 }
 
 .certificates.dark .certificate-display {
@@ -111,6 +113,7 @@
   height: 100%;
   object-fit: contain;
   padding: 10px;
+  box-sizing: border-box;
   transition: transform 0.3s ease;
 }
 
@@ -254,25 +257,32 @@
 
 @media (max-width: 768px) {
   .certificates {
-  padding: 60px 5% 60px;
-  min-height: auto;
-}
+    padding: 60px 5% 60px;
+    min-height: auto;
+  }
 
   .carousel-wrapper {
-    gap: 10px;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .certificate-display {
+    width: 100%;               /* ← FIX: full available width on mobile */
+    height: auto;              /* ← FIX: height adapts to content */
+    min-height: 420px;
   }
 
   .certificate-image-container {
-    height: 280px;
+    height: 240px;
   }
 
   .cert-title-slider {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .carousel-arrow {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     font-size: 0.9rem;
   }
 
@@ -283,11 +293,11 @@
 
 @media (max-width: 480px) {
   .certificate-image-container {
-    height: 220px;
+    height: 200px;
   }
 
   .certificate-display {
-    padding: 15px;
+    padding: 12px;
   }
 
   .cert-title-slider {
