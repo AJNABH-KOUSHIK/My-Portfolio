@@ -161,6 +161,8 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  flex-wrap: wrap;           /* ← FIX: wraps as normal lines, not split columns */
+  line-height: 1.6;
 }
 
 .light .footer-bottom p {
@@ -193,5 +195,15 @@
 
   .footer {
     padding: 50px 5% 20px;
+  }
+
+  .footer-bottom p {
+    display: inline-block;    /* ← FIX: text flows naturally in 2-3 centered lines */
+    text-align: center;
+  }
+
+  .heart-icon {
+    display: inline-block;
+    vertical-align: middle;
   }
 }
