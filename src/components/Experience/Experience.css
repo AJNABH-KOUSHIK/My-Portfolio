@@ -44,16 +44,16 @@
   position: relative;
 }
 
-/* Experience Card */
+/* ===== Experience Card — DARK theme base ===== */
 .experience-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  position: relative;
+  background: #16213e;                       /* dark card in dark mode */
+  border: 2px solid transparent;
+  border-radius: 16px;
   padding: 30px;
   display: flex;
   gap: 25px;
-  position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   animation: slideIn 0.6s ease forwards;
   opacity: 0;
   transform: translateY(20px);
@@ -66,35 +66,60 @@
   }
 }
 
+/* Gradient border layer (hidden by default) */
+.experience-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6, #06b6d4);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* Hover — gradient border + lift + glow */
 .experience-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(102, 126, 234, 0.3);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow:
+    0 10px 30px rgba(139, 92, 246, 0.25),
+    0 0 20px rgba(236, 72, 153, 0.15);
 }
 
-.experience-card.highlight {
-  border-color: rgba(236, 72, 153, 0.3);
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+.experience-card:hover::before {
+  opacity: 1;
 }
 
-/* Icon */
-.experience-icon {
+/* Logo box */
+.experience-logo {
   width: 60px;
   height: 60px;
-  background: rgba(102, 126, 234, 0.1);
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
   flex-shrink: 0;
-  border: 1px solid rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  padding: 8px;
 }
 
-.experience-card.highlight .experience-icon {
-  background: rgba(236, 72, 153, 0.1);
-  border-color: rgba(236, 72, 153, 0.3);
+.experience-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover .experience-logo img {
+  transform: scale(1.1);
 }
 
 /* Content */
@@ -224,7 +249,9 @@
   gap: 5px;
 }
 
-/* Light Theme Adjustments */
+/* ============================================================
+   LIGHT THEME — ALL cards white (highlight ones too!)
+   ============================================================ */
 .experience.light {
   background: #f7fafc;
 }
@@ -233,14 +260,10 @@
   color: #1a202c;
 }
 
-.experience.light .experience-card {
-  background: white;
-  border-color: #e2e8f0;
+.experience.light .experience-card,
+.experience.light .experience-card.highlight {
+  background: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-.experience.light .experience-card:hover {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .experience.light .experience-role {
@@ -251,31 +274,48 @@
   color: #4a5568;
 }
 
+.experience.light .experience-logo {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================================
+   DARK THEME — ALL cards dark (highlight ones too!)
+   ============================================================ */
+.experience.dark {
+  background: #1a1a2e;
+}
+
+.experience.dark .experience-card,
+.experience.dark .experience-card.highlight {
+  background: #16213e;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
   }
-  
+
   .experience-card {
     flex-direction: column;
     padding: 20px;
   }
-  
-  .experience-icon {
+
+  .experience-logo {
     width: 50px;
     height: 50px;
-    font-size: 1.5rem;
   }
-  
+
   .experience-header {
     flex-direction: column;
   }
-  
+
   .experience-meta {
     align-items: flex-start;
   }
-  
+
   .highlight-badge {
     position: relative;
     top: auto;
@@ -284,78 +324,4 @@
     margin-top: 15px;
     align-self: flex-start;
   }
-}
-.experience-logo {
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  padding: 8px;
-}
-
-.experience-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  filter: brightness(0.9) contrast(1.1);
-  transition: transform 0.3s ease;
-}
-
-.experience-card:hover .experience-logo img {
-  transform: scale(1.1);
-}
-
-/* For light theme */
-.experience.light .experience-logo {
-  background: white;
-  border-color: #e2e8f0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.experience.light .experience-logo img {
-  filter: none;
-}
-.experience-card {
-  position: relative;
-  background: #ffffff;
-  border-radius: 16px;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
-  background-clip: padding-box;
-}
-
-/* Gradient border layer (hidden by default) */
-.experience-card::before {
-  content: '';
-  position: absolute;
-  inset: -2px;                       /* sits exactly where border is */
-  border-radius: 16px;
-  padding: 2px;
-  background: linear-gradient(135deg, #ec4899, #8b5cf6, #06b6d4);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-/* On hover — gradient border appears + lift + glow */
-.experience-card:hover {
-  transform: translateY(-6px);
-  box-shadow:
-    0 10px 30px rgba(139, 92, 246, 0.25),
-    0 0 20px rgba(236, 72, 153, 0.15);
-}
-
-.experience-card:hover::before {
-  opacity: 1;
 }
