@@ -217,6 +217,22 @@
   font-size: 0.72rem;
   margin: 0;
 }
+.dsa.dark .badges-card {
+  background: #16213e;
+  border-color: #bb86fc;
+}
+
+.dsa.dark .badges-subtitle {
+  color: #e0e0e0;
+}
+
+.dsa.dark .badges-divider {
+  border-top-color: #94a3b8;
+}
+
+.dsa.dark .badge-date {
+  color: #aab;
+}
 /* Clockwise rotation */
 @keyframes orbit-spin {
   from { transform: rotate(0deg); }
