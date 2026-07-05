@@ -174,52 +174,43 @@
 
 /* Mobile Responsive */
 @media (max-width: 968px) {
-  .hamburger {
-    display: block;
-    z-index: 1001;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    transition: all 0.3s ease;
-    z-index: 1000;
-  }
-
-  /* ===== FIX: theme class is on .navbar, not .nav-menu ===== */
-  .navbar.light .nav-menu {
-    background: #e8d5f5;        /* solid — nothing visible behind */
-  }
-
-  .navbar.dark .nav-menu {
-    background: #1a1a2e;        /* solid dark */
-  }
-
-  .nav-menu.active {
-    right: 0;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
-  }
-
   .nav-links {
     flex-direction: column;
-    gap: 10px;
+    gap: 14px;
+    width: 100%;
+    padding: 0 25px;
+    list-style: none;
+  }
+
+  .nav-links li {
+    width: 100%;
   }
 
   .nav-link {
-    font-size: 1.1rem;
-    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.05rem;
+    padding: 14px 20px;
+    border: 1.5px solid rgba(155, 89, 182, 0.4);   /* visible box border */
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.35);
+    transition: all 0.3s ease;
+    box-sizing: border-box;
   }
 
-  .connect-btn {
-    display: none;
+  .navbar.dark .nav-link {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(187, 134, 252, 0.35);
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
+    background: linear-gradient(135deg, #9b59b6, #e91e63);
+    color: #fff !important;
+    border-color: transparent;
   }
 }
-
 @media (max-width: 480px) {
   .navbar {
     padding: 10px 3%;
