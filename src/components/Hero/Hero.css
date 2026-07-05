@@ -415,6 +415,7 @@
     padding: 100px 6% 60px;
     overflow: hidden;
   }
+  
 
   .hero-wrapper {
     flex-direction: column-reverse;   /* robot on top, text below */
@@ -458,9 +459,13 @@
   }
 
   .info-item {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
-    flex-wrap: wrap;
+    gap: 8px;
+    flex-wrap: nowrap;          /* ← icon and text stay on SAME line */
+    font-size: 0.85rem;         /* smaller so long location fits */
+    white-space: nowrap;
   }
 
   /* Buttons stacked nicely */
