@@ -46,7 +46,7 @@ export const personalInfo = {
   ],
   email: 'ajnabhkoushikbaruah@gmail.com',
   location: 'Vishakapatnam, Andhra Pradesh, India',
-  resumeLink: 'https://drive.google.com/file/d/1W9PtsbSRBnvvxro7uyYZTyrEDDpnK8st/view?usp=sharing',
+  resumeLink: 'https://drive.google.com/file/d/1DL_pQNyCihz_YttE0_VkD0hMZu-1ywZX/view?usp=sharing',
   github: 'https://github.com/AJNABH-KOUSHIK',
   linkedin: 'https://www.linkedin.com/in/ajnabh-koushik-baruah-0ba92a336/',
   instagram: 'https://www.instagram.com/ajnabh_koushik/',
