@@ -32,7 +32,7 @@ const projects = [
     title: 'VK DSA Hub',
     subtitle: 'DSA Practice Platform',
     category: 'Full Stack Web App',
-    image: dsaHubImg,
+    image: vkdsahub,
     description:
   'An all-in-one DSA learning platform featuring pattern-based problem organization, curated questions from LeetCode, GFG, TUF, and Codeforces, progress analytics, revision tracking, practice calendar, personal notes, resource management, and secure Firebase authentication.'
       tech: ['HTML', 'CSS', 'JavaScript', 'Firebase Auth', 'Firestore', 'Netlify'],
