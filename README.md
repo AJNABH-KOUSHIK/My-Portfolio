@@ -1,16 +1,126 @@
-# React + Vite
+# 🚀 Ajnabh Koushik | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> *Crafting clean code, building impactful solutions, and turning ideas into interactive web experiences.*
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website! 👋
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio is a reflection of my journey as a Computer Science student and aspiring Software Engineer. It highlights my projects, technical skills, achievements, certifications, and coding journey through a modern, responsive, and interactive interface.
 
-## React Compiler
+Designed with performance and user experience in mind, the portfolio combines elegant animations, intuitive navigation, and a minimal aesthetic to create a memorable experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🌐 Live Website
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+🔗 **Explore My Portfolio:** *(Add your Vercel/Netlify link here)*
+
+---
+
+# ✨ Highlights
+
+- 🎨 Modern, clean & fully responsive UI
+- ⚡ Smooth animations powered by Framer Motion
+- 💻 Interactive Projects section with GitHub & Live Demo
+- 🏆 Dedicated Certifications showcase
+- 🧠 DSA Journey & Coding Profiles
+- 🌙 Light/Dark theme support
+- 📬 Functional Contact Form powered by EmailJS
+- 📱 Mobile-first responsive design
+- 🚀 Fast loading and optimized performance
+
+---
+
+# 🛠️ Built With
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Building the user interface |
+| Tailwind CSS | Responsive styling & modern design |
+| Framer Motion | Smooth page & component animations |
+| Embla Carousel | Interactive certifications carousel |
+| EmailJS | Contact form integration |
+| React Icons | Beautiful scalable icons |
+| Vercel | Hosting & Deployment |
+
+---
+
+# 📂 Portfolio Sections
+
+- 🏠 Hero Section
+- 👨‍💻 About Me
+- 🛠️ Skills
+- 🚀 Projects
+- 📜 Certifications
+- 💡 DSA Hub
+- 🏆 Achievements
+- 📬 Contact
+
+---
+
+# 🎯 Key Features
+
+✔️ Pixel-perfect responsive layout
+
+✔️ Optimized React component architecture
+
+✔️ Smooth scrolling experience
+
+✔️ Interactive hover effects
+
+✔️ Clean and maintainable codebase
+
+✔️ SEO-friendly structure
+
+✔️ Fast deployment pipeline
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/AJNABH-KOUSHIK/your-repository-name.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+# 📬 Connect With Me
+
+- 💼 LinkedIn
+- 💻 GitHub
+- 🧩 LeetCode
+- 📧 Email
+- 📸 Instagram
+
+---
+
+# ⭐ If you like this project...
+
+Give it a ⭐ on GitHub and feel free to fork it!
+
+---
+
+## 👨‍💻 Designed & Developed by
+
+# **Ajnabh Koushik**
+
+### *Building elegant interfaces, solving challenging problems, and continuously learning one commit at a time.* 🚀
