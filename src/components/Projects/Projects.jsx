@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 import portfolioImg from '../../assets/projects/portfolio.png'
 import herguardianImg from '../../assets/projects/herguardian.png'
-import weatherImg from '../../assets/projects/weather.png'
+import weatherImg from '../../assets/projects/vkdsahub.png'
 
 
 
@@ -26,7 +26,6 @@ const projects = [
     github: 'https://github.com/Leelasatyavijayeswarikopalli-22/HerGuardian.git',
     live: 'https://her-guardian.vercel.app/',
   },
-  {
    {
     id: 3,
     title: 'VK DSA Hub',
@@ -34,7 +33,7 @@ const projects = [
     category: 'Full Stack Web App',
     image: vkdsahub,
     description:
-  'An all-in-one DSA learning platform featuring pattern-based problem organization, curated questions from LeetCode, GFG, TUF, and Codeforces, progress analytics, revision tracking, practice calendar, personal notes, resource management, and secure Firebase authentication.'
+  'An all-in-one DSA learning platform featuring pattern-based problem organization, curated questions from LeetCode, GFG, TUF, and Codeforces, progress analytics, revision tracking, practice calendar, personal notes, resource management, and secure Firebase authentication.',
       tech: ['HTML', 'CSS', 'JavaScript', 'Firebase Auth', 'Firestore', 'Netlify'],
     github: 'https://github.com/AJNABH-KOUSHIK/VK-DSA-Sheet',
     live: 'https://vk-dsa-hub.netlify.app/'
