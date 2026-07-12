@@ -103,13 +103,13 @@ npm run build
 
 ---
 
-# 📬 Connect With Me
+## 📬 Connect With Me
 
-- 💼 LinkedIn
-- 💻 GitHub
-- 🧩 LeetCode
-- 📧 Email
-- 📸 Instagram
+- 💼 **LinkedIn:** https://www.linkedin.com/in/ajnabh-koushik-baruah-0ba92a336/
+- 💻 **GitHub:** https://github.com/AJNABH-KOUSHIK
+- 🧩 **LeetCode:** https://leetcode.com/u/ajnabhkoushik/
+- 📧 **Email:** mailto:ajnabhb.ug24.cs@nitp.ac.in
+- 📸 **Instagram:** https://www.instagram.com/ajnabh_koushik/
 
 ---
 
