@@ -10,9 +10,9 @@ Designed with performance and user experience in mind, the portfolio combines el
 
 ---
 
-## 🌐 Live Website
+## 🌐 Live Demo
 
-🔗 **Explore My Portfolio:** *https://ajnabh-koushik-portfolio.vercel.app/*
+👉 **[Visit Portfolio](https://ajnabh-koushik-portfolio.vercel.app/)**
 
 ---
 
