@@ -37,7 +37,6 @@ const projects = [
       tech: ['HTML', 'CSS', 'JavaScript', 'Firebase Auth', 'Firestore', 'Netlify'],
     github: 'https://github.com/AJNABH-KOUSHIK/VK-DSA-Sheet',
     live: 'https://vk-dsa-hub.netlify.app/'
-}
   },
 ]
 
