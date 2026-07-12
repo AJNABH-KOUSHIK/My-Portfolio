@@ -27,14 +27,18 @@ const projects = [
     live: 'https://her-guardian.vercel.app/',
   },
   {
+   {
     id: 3,
-    title: '-----------------',
-    image: weatherImg,
+    title: 'VK DSA Hub',
+    subtitle: 'DSA Practice Platform',
+    category: 'Full Stack Web App',
+    image: dsaHubImg,
     description:
-      '-------------------------------------------------------',
-    tech: ['------------------'],
-    github: 'https://github.com/YOUR_USERNAME/weather-app',
-    live: 'https://your-weather-link.com',
+  'An all-in-one DSA learning platform featuring pattern-based problem organization, curated questions from LeetCode, GFG, TUF, and Codeforces, progress analytics, revision tracking, practice calendar, personal notes, resource management, and secure Firebase authentication.'
+      tech: ['HTML', 'CSS', 'JavaScript', 'Firebase Auth', 'Firestore', 'Netlify'],
+    github: 'https://github.com/AJNABH-KOUSHIK/VK-DSA-Sheet',
+    live: 'https://vk-dsa-hub.netlify.app/'
+}
   },
 ]
 
