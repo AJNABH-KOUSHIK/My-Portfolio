@@ -113,12 +113,6 @@ npm run build
 
 ---
 
-# ⭐ If you like this project...
-
-Give it a ⭐ on GitHub and feel free to fork it!
-
----
-
 ## 👨‍💻 Designed & Developed by
 
 # **Ajnabh Koushik**
