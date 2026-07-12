@@ -5,7 +5,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 import portfolioImg from '../../assets/projects/portfolio.png'
 import herguardianImg from '../../assets/projects/herguardian.png'
-import weatherImg from '../../assets/projects/vkdsahub.png'
+import vkdsahub from '../../assets/projects/vkdsahub.png'
 
 
 
